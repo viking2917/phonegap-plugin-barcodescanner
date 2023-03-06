@@ -1,6 +1,12 @@
 # PhoneGap Plugin BarcodeScanner
 ================================
 
+NOTE: The standard barcodescanner plugin conflicts with Facebook due to double inclusion of the zxing libraries.
+Following https://github.com/mpacary/phonegap-plugin-barcodescanner, I altered the barcodescanner.gradle to exclude those libraries. 
+Seems to work. Caveat emptor.
+
+
+
 [![Build Status](https://travis-ci.org/phonegap/phonegap-plugin-barcodescanner.svg)](https://travis-ci.org/phonegap/phonegap-plugin-barcodescanner)
 
 Cross-platform BarcodeScanner for Cordova / PhoneGap.
